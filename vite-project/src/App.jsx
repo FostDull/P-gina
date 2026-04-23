@@ -170,7 +170,7 @@ function App() {
             <h1>CALCULATOR BUTTONS</h1>
           </div>
 
-          {/* PANTALLA */}
+          {/* Display */}
           <div>
             <input
               type="text"
@@ -179,7 +179,7 @@ function App() {
             />
           </div>
 
-          {/* BOTONES */}
+          {/* BOTtons */}
           <div>
             <button onClick={() => handleDigit(7)}>7</button>
             <button onClick={() => handleDigit(8)}>8</button>

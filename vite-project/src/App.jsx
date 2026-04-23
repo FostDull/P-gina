@@ -92,13 +92,17 @@ function App() {
 
   return (
     <>
-      <button type="button" onClick={handleClick}>
-        APP 1
-      </button>
+      {!option && !option2 && (
+        <>
+          <button type="button" onClick={handleClick}>
+            APP 1
+          </button>
 
-      <button type="button" onClick={handleClick2}>
-        APP 2
-      </button>
+          <button type="button" onClick={handleClick2}>
+            APP 2
+          </button>
+        </>
+      )}
 
       {option && (<>
 

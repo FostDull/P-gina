@@ -34,7 +34,7 @@ function App() {
     setOption(false)
   }
 
-  // Real Calculator Functions
+  // Calculator Functions
   const handleDigit = (digit) => {
     if (waitingForNewValue) {
       setDisplay(String(digit));
@@ -163,6 +163,9 @@ function App() {
       </>
       )}
 
+
+      {/* Calculator buttons app */}
+
       {option2 && (<>
 
         <section id="Calculator-App">
@@ -179,7 +182,7 @@ function App() {
             />
           </div>
 
-          {/* BOTtons */}
+          {/* BOTTONS */}
           <div>
             <button onClick={() => handleDigit(7)}>7</button>
             <button onClick={() => handleDigit(8)}>8</button>

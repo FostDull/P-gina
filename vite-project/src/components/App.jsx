@@ -5,10 +5,10 @@ export default function App3({ setOption3 }) {
   const [selected, setSelected] = useState(null);
 
   const data = [
-    { id: 1, title: 'Product 1', description: 'Description 1' },
-    { id: 2, title: 'Product 2', description: 'Description 2' },
-    { id: 3, title: 'Product 3', description: 'Description 3' },
-    { id: 4, title: 'Services 1', description: 'Description A' },
+    { id: 1, title: 'Producto 1', description: 'Detalle del producto 1' },
+    { id: 2, title: 'Producto 2', description: 'Detalle del producto 2' },
+    { id: 3, title: 'Servicio A', description: 'Detalle del servicio A' },
+    { id: 4, title: 'Servicio B', description: 'Detalle del servicio B' },
   ];
 
   const filtered = data.filter(item =>
@@ -34,10 +34,10 @@ export default function App3({ setOption3 }) {
             onClick={() => setSelected(item)}
             className="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 cursor-pointer border border-gray-100"
           >
-            
+            {/* Imagen opcional */}
             <div className="h-32 bg-gradient-to-r from-blue-400 to-blue-600 rounded-t-2xl"></div>
 
-            
+            {/* Contenido */}
             <div className="p-4">
               <h2 className="text-lg font-bold text-gray-800">
                 {item.title}
@@ -47,14 +47,14 @@ export default function App3({ setOption3 }) {
               </p>
 
               <button className="mt-4 text-blue-500 text-sm font-semibold hover:underline">
-                INFO
+                Ver más →
               </button>
             </div>
           </div>
         ))}
       </div>
 
-      
+      {/* Modal */}
       {selected && (
         <div className="fixed inset-0 flex items-center justify-center bg-black/40">
           <div className="bg-white rounded-2xl p-6 w-80 relative shadow-xl">
@@ -72,7 +72,7 @@ export default function App3({ setOption3 }) {
               onClick={() => setOption3(false)}
               className="mt-5 w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600"
             >
-              EXIT
+              Cerrar
             </button>
           </div>
         </div>

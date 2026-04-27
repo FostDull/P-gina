@@ -76,7 +76,8 @@ export default function App3({ setOption3 }) {
               className="group flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-200"
             >
               <div 
-                className={`h-36 bg-gradient-to-br ${item.color} relative overflow-hidden cursor-pointer`}
+                className={`h-36 bg-gray-200 relative overflow-hidden cursor-pointer bg-cover bg-center`}
+                style={{ backgroundImage: `url(https://picsum.photos/seed/${item.id}/400/200)` }}
                 onClick={() => setSelected(item)}
               >
                 <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-300"></div>
@@ -122,7 +123,10 @@ export default function App3({ setOption3 }) {
             ></div>
             
             <div className="bg-white rounded-2xl shadow-2xl overflow-hidden max-w-lg w-full relative z-10 transform transition-all scale-100 flex flex-col max-h-[90vh]">
-              <div className={`h-20 sm:h-28 bg-gradient-to-br ${selected.color} relative shrink-0`}>
+              <div 
+                className={`h-20 sm:h-28 bg-gray-200 relative shrink-0 bg-cover bg-center`}
+                style={{ backgroundImage: `url(https://picsum.photos/seed/${selected.id}/800/300)` }}
+              >
                 <Buttoons variant="modal-close-icon" onClick={handleCloseModal}>
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

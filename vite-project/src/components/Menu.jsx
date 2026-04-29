@@ -31,15 +31,15 @@ export default function Menu({ setOption, setOption2, setOption3 }) {
         </p>
 
         <Buttoons variant="menu-1" onClick={handleClick}>
-          APP 1
+          CalculatorS
         </Buttoons>
 
         <Buttoons variant="menu-2" onClick={handleClick2}>
-          APP 2
+          CalculatorB
         </Buttoons>
 
         <Buttoons variant="menu-3" onClick={handleClick3}>
-          APP 3
+          Cards
         </Buttoons>
       </div>
     </div>

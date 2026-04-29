@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Buttoons from './Buttoons';
 
-export default function App3({ setOption3 }) {
+export default function Cards({ setOption3 }) {
   const [search, setSearch] = useState('');
   const [selected, setSelected] = useState(null);
   const [isEditing, setIsEditing] = useState(false);
@@ -44,7 +44,7 @@ export default function App3({ setOption3 }) {
         {/* Header section with back button */}
         <div className="flex flex-col sm:flex-row justify-between items-center mb-8 gap-4">
           <div>
-            <h1 className="text-3xl font-bold text-black tracking-tight">Our Services</h1>
+            <h1 className="text-3xl font-bold text-black tracking-tight">Cards</h1>
             <p className="mt-1 text-base text-gray-700 font-medium">Explore what we have to offer.</p>
           </div>
           <Buttoons variant="back" onClick={() => setOption3(false)}>

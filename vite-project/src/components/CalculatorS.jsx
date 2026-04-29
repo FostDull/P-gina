@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Buttoons from './Buttoons';
 
-export default function App1({ setOption }) {
+export default function CalculatorS({ setOption }) {
   const [num1, setNum1] = useState("");
   const [num2, setNum2] = useState("");
   const [result, setResult] = useState(null);
@@ -20,7 +20,7 @@ export default function App1({ setOption }) {
         {/* Header section with back button */}
         <div className="flex flex-col sm:flex-row justify-between items-center mb-8 gap-4">
           <div>
-            <h1 className="text-3xl font-bold text-black tracking-tight">Basic Calculator</h1>
+            <h1 className="text-3xl font-bold text-black tracking-tight">CalculatorS</h1>
             <p className="mt-1 text-base text-gray-700 font-medium">Sum of two numbers.</p>
           </div>
           <Buttoons variant="back" onClick={() => setOption(false)}>

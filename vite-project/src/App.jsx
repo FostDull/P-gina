@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import App1 from './components/App1'
-import App2 from './components/App2'
-import App3 from './components/App3'
+import CalculatorS from './components/CalculatorS'
+import CalculatorB from './components/CalculatorB'
+import Cards from './components/Cards'
 import Menu from './components/Menu'
 import './App.css'
 
@@ -21,11 +21,11 @@ function App() {
         />
       )}
 
-      {option && <App1 setOption={setOption} />}
+      {option && <CalculatorS setOption={setOption} />}
 
-      {option2 && <App2 setOption2={setOption2} />}
+      {option2 && <CalculatorB setOption2={setOption2} />}
 
-      {option3 && <App3 setOption3={setOption3} />}
+      {option3 && <Cards setOption3={setOption3} />}
     </>
   )
 }
